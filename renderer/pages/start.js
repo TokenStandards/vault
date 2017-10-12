@@ -27,6 +27,9 @@ function generateKey() {
     let privateKey = master.toBase58()
     let publicKey = master.neutered().toBase58()
     let encryptedPrivateKey = sjcl.encrypt(password, privateKey)
+
+    // TODO: remove log event
+    console.log(ledger)
     alert(publicKey)
   })
 }
@@ -49,7 +52,8 @@ function createWallet() {
 export default () => (
   <div>
     <Head>
-      <scripts type="text/javascript" src="./static/ledger.min.js"></scripts>
+      <script src="/static/ledger.min.js"></script>
+      <script src="/static/chrome-u2f-api.js"></script>
     </Head>
     <span>Welcome to the token standards vault</span>
     <h2>Generate Key</h2>
