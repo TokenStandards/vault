@@ -10,5 +10,9 @@ module.exports = {
     return {
       '/start': { page: '/start' }
     }
+  },
+  loader: 'file-loader',
+  options: {
+    name: 'static/*.js'
   }
 }

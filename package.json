@@ -18,15 +18,28 @@
     ]
   },
   "devDependencies": {
+    "babel-plugin-syntax-async-functions": "^6.13.0",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-next-react": "^1.1.1",
+    "babel-preset-react": "^6.24.1",
     "electron": "1.7.5",
     "electron-builder": "19.22.1",
+    "file-loader": "^1.1.5",
     "next": "3.0.6",
     "react": "15.6.1",
     "react-dom": "15.6.1"
   },
   "dependencies": {
     "app-root-path": "2.0.1",
+    "aws-sdk": "^2.130.0",
+    "bitcoinjs-lib": "^3.2.0",
+    "bluebird": "^3.5.1",
     "electron-is-dev": "0.3.0",
-    "electron-next": "3.1.1"
+    "electron-next": "3.1.1",
+    "ledger": "git@github.com:LedgerHQ/ledger-node-js-api.git#77e3a1aba1f7ec7572b6752fb475aa0d3cb88efc",
+    "more-entropy": "0.0.7",
+    "sjcl": "^1.0.7"
   }
 }
